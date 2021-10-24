@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTxtGoldRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Current Gold Rate per gram(PKR)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtTotalAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Total Value of Assets (PKR)"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtGoldRate"
+        app:layout_constraintStart_toStartOf="@+id/editTxtGoldRate"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGoldRate" />
+
+    <Button
+        android:id="@+id/btnCalcZakah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Calculate Zakah"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtTotalAssets"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTotalAssets"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTotalAssets"
+        android:onClick="calcZakah"
+        />
+
+    <TextView
+        android:id="@+id/txtViewShowAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcZakah"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcZakah"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcZakah" />
+</androidx.constraintlayout.widget.ConstraintLayout>
