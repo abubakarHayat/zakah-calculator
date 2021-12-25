@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:ems="10"
+        android:hint="Current Gold Rate per gram(PKR)"
         android:inputType="textPersonName"
-        android:text="Current Gold Rate per gram(PKR)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,8 @@
         android:text="Total Value of Assets (PKR)"
         app:layout_constraintEnd_toEndOf="@+id/editTxtGoldRate"
         app:layout_constraintStart_toStartOf="@+id/editTxtGoldRate"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtGoldRate" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGoldRate"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnCalcZakah"
